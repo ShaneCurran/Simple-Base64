@@ -1,3 +1,4 @@
+#!/bin/bash
 # B64 console toolkit
 # Allows Base64 encoding and decoding from one command, b64
 # Usage: b64 SXQgd29ya3Mh
@@ -16,7 +17,7 @@ if which php >/dev/null; then
         	  php ~/.b64/b64.php \"\$1\"
 	}" > ~/.bashrc
 	PS1="$ "
-	source ~/.bashrc
+	. ~/.bashrc
 	echo "*** Install Complete ***"
 else
 	echo "Depends on php-cli which is not installed. Please install it"
