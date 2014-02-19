@@ -13,7 +13,7 @@ if which php >/dev/null; then
 	mkdir ~/.b64
 	wget https://raw.github.com/ShaneCurran/Simple-Base64/master/b64.php -O ~/.b64/b64.php
 	echo "b64 () {
-        	  php ~/.b64/b64.php \"$1\"
+        	  php ~/.b64/b64.php '\$1'
 	}" > ~/.bashrc
 	PS1="$ "
 	source ~/.bashrc
