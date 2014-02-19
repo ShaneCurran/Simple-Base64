@@ -8,10 +8,15 @@
 # @author Shane Curran
 
 echo "*** Installing Simple-Base64 ***"
-mkdir ~/.b64
-wget https://raw.github.com/ShaneCurran/Simple-Base64/master/b64.php -O ~/.b64/b64.php
-echo "b64 () {
-          php ~/.b64/b64.php "$1"
-}" > ~/.bashrc
-source ~/.bashrc
-echo "*** Install Complete ***"
+
+if which php >/dev/null; then
+	mkdir ~/.b64
+	wget https://raw.github.com/ShaneCurran/Simple-Base64/master/b64.php -O ~/.b64/b64.php
+	echo "b64 () {
+        	  php ~/.b64/b64.php \"$1\"
+	}" > ~/.bashrc
+	source ~/.bashrc
+	echo "*** Install Complete ***"
+else
+	echo "Depends on php-cli which is not installed. Please install it"
+fi
