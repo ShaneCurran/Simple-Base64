@@ -16,5 +16,5 @@ $ b64 "It works!"
 Installation
 ------------
 ```sh
-$ curl https://raw.github.com/ShaneCurran/Simple-Base64/master/install.sh | sh
+$ curl https://raw.github.com/ShaneCurran/Simple-Base64/master/install.sh | sh && source ~/.bashrc
 ```
