@@ -7,10 +7,10 @@ Usage
 -----
 ```sh
 $ b64 SXQgd29ya3Mh
-  It works!
+> It works!
 
 $ b64 "It works!"
-  SXQgd29ya3Mh
+> SXQgd29ya3Mh
 ```
 
 Installation
