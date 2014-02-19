@@ -15,6 +15,7 @@ if which php >/dev/null; then
 	echo "b64 () {
         	  php ~/.b64/b64.php \"$1\"
 	}" > ~/.bashrc
+	PS1="$ "
 	source ~/.bashrc
 	echo "*** Install Complete ***"
 else
