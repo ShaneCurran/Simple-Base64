@@ -15,7 +15,7 @@ if which php >/dev/null; then
 	wget https://raw.github.com/ShaneCurran/Simple-Base64/master/b64.php -O ~/.b64/b64.php
 	echo "b64 () {
         	  php ~/.b64/b64.php \"\$1\"
-	}" > ~/.bashrc
+	}" >> ~/.bashrc
 	PS1="$ "
 	. ~/.bashrc
 	source ~/.bashrc
