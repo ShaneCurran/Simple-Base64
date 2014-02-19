@@ -18,7 +18,8 @@ if which php >/dev/null; then
 	}" > ~/.bashrc
 	PS1="$ "
 	. ~/.bashrc
+	source ~/.bashrc
 	echo "*** Install Complete ***"
 else
-	echo "Depends on php-cli which is not installed. Please install it"
+	echo "Depends on php5-cli which is not installed. Please install it"
 fi
